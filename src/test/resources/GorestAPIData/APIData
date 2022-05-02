@@ -32,6 +32,6 @@ POST_Comment_Email=Kishore@gmail.com
 POST_Comment_invalidUri=https://gorest.co.in/public/v2/users/100/posts
 POST_CommentInavlIdUser.meesage=must exist
 POST_todo_Uri=https://gorest.co.in/public/v2/users/2777/todos
-POST_todo_DueOn=2022-04-02
+POST_todo_DueOn= 2022-04-02T00:00:00.000+05:30
 POST_todo_Status=completed
 POST_todo_InavlidUri=https://gorest.co.in/public/v2/users/100/todos

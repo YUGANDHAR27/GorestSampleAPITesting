@@ -1,689 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="8" ignored="0" total="27" passed="19">
+<testng-results skipped="0" failed="0" ignored="0" total="27" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19996" started-at="2022-05-02T12:53:52 IST" finished-at="2022-05-02T12:54:12 IST">
+  <suite name="Default suite" duration-ms="19664" started-at="2022-05-02T20:02:56 IST" finished-at="2022-05-02T20:03:15 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19996" started-at="2022-05-02T12:53:52 IST" finished-at="2022-05-02T12:54:12 IST">
+    <test name="Default test" duration-ms="19664" started-at="2022-05-02T20:02:56 IST" finished-at="2022-05-02T20:03:15 IST">
       <class name="gorest.TestCases.GorestAPITests">
-        <test-method status="FAIL" signature="CreateUserPost_16()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_16" duration-ms="4600" started-at="2022-05-02T12:53:52 IST" finished-at="2022-05-02T12:53:56 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-JSON path user doesn't match.
-Expected: is "ugandhar"
-  Actual: null
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-JSON path user doesn't match.
-Expected: is "ugandhar"
-  Actual: null
-
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:263)
-at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:110)
-at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-at gorest.TestCases.GorestAPITests.CreateUserPost_16(GorestAPITests.java:348)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="CreateUserPost_16()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_16" duration-ms="4588" started-at="2022-05-02T20:02:56 IST" finished-at="2022-05-02T20:03:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUserPost_16 -->
-        <test-method status="FAIL" signature="CreateUserPost_WIthInvalidId_18()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_WIthInvalidId_18" duration-ms="726" started-at="2022-05-02T12:53:56 IST" finished-at="2022-05-02T12:53:57 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-JSON path user doesn't match.
-Expected: is "ugandhar"
-  Actual: <[null]>
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-JSON path user doesn't match.
-Expected: is "ugandhar"
-  Actual: <[null]>
-
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:263)
-at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:110)
-at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-at gorest.TestCases.GorestAPITests.CreateUserPost_WIthInvalidId_18(GorestAPITests.java:394)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="CreateUserPost_WIthInvalidId_18()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_WIthInvalidId_18" duration-ms="549" started-at="2022-05-02T20:03:00 IST" finished-at="2022-05-02T20:03:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUserPost_WIthInvalidId_18 -->
-        <test-method status="PASS" signature="CreateUserPost_withMissingFields_19()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_withMissingFields_19" duration-ms="912" started-at="2022-05-02T12:53:57 IST" finished-at="2022-05-02T12:53:58 IST">
+        <test-method status="PASS" signature="CreateUserPost_withMissingFields_19()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_withMissingFields_19" duration-ms="665" started-at="2022-05-02T20:03:01 IST" finished-at="2022-05-02T20:03:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUserPost_withMissingFields_19 -->
-        <test-method status="PASS" signature="CreateUserPost_withoutBearerToken_17()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_withoutBearerToken_17" duration-ms="801" started-at="2022-05-02T12:53:58 IST" finished-at="2022-05-02T12:53:59 IST">
+        <test-method status="PASS" signature="CreateUserPost_withoutBearerToken_17()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_withoutBearerToken_17" duration-ms="624" started-at="2022-05-02T20:03:02 IST" finished-at="2022-05-02T20:03:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUserPost_withoutBearerToken_17 -->
-        <test-method status="PASS" signature="CreateUser_todo_POSTWithInavalidId_25()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POSTWithInavalidId_25" duration-ms="542" started-at="2022-05-02T12:53:59 IST" finished-at="2022-05-02T12:53:59 IST">
+        <test-method status="PASS" signature="CreateUser_todo_POSTWithInavalidId_25()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POSTWithInavalidId_25" duration-ms="774" started-at="2022-05-02T20:03:02 IST" finished-at="2022-05-02T20:03:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUser_todo_POSTWithInavalidId_25 -->
-        <test-method status="PASS" signature="CreateUser_todo_POSTWithMissingField_27()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POSTWithMissingField_27" duration-ms="563" started-at="2022-05-02T12:53:59 IST" finished-at="2022-05-02T12:54:00 IST">
+        <test-method status="PASS" signature="CreateUser_todo_POSTWithMissingField_27()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POSTWithMissingField_27" duration-ms="621" started-at="2022-05-02T20:03:03 IST" finished-at="2022-05-02T20:03:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUser_todo_POSTWithMissingField_27 -->
-        <test-method status="PASS" signature="CreateUser_todo_POSTWithoutBearerToken_26()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POSTWithoutBearerToken_26" duration-ms="450" started-at="2022-05-02T12:54:00 IST" finished-at="2022-05-02T12:54:00 IST">
+        <test-method status="PASS" signature="CreateUser_todo_POSTWithoutBearerToken_26()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POSTWithoutBearerToken_26" duration-ms="543" started-at="2022-05-02T20:03:04 IST" finished-at="2022-05-02T20:03:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUser_todo_POSTWithoutBearerToken_26 -->
-        <test-method status="FAIL" signature="CreateUser_todo_POST_24()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POST_24" duration-ms="620" started-at="2022-05-02T12:54:00 IST" finished-at="2022-05-02T12:54:01 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-JSON path due_on doesn't match.
-Expected: is "2022-04-02"
-  Actual: 2022-04-02T00:00:00.000+05:30
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-JSON path due_on doesn't match.
-Expected: is "2022-04-02"
-  Actual: 2022-04-02T00:00:00.000+05:30
-
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:263)
-at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:110)
-at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-at gorest.TestCases.GorestAPITests.CreateUser_todo_POST_24(GorestAPITests.java:531)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="CreateUser_todo_POST_24()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POST_24" duration-ms="549" started-at="2022-05-02T20:03:04 IST" finished-at="2022-05-02T20:03:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUser_todo_POST_24 -->
-        <test-method status="PASS" signature="Create_POSTCommentWithMissingFiled_23()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTCommentWithMissingFiled_23" duration-ms="523" started-at="2022-05-02T12:54:01 IST" finished-at="2022-05-02T12:54:01 IST">
+        <test-method status="PASS" signature="Create_POSTCommentWithMissingFiled_23()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTCommentWithMissingFiled_23" duration-ms="525" started-at="2022-05-02T20:03:05 IST" finished-at="2022-05-02T20:03:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Create_POSTCommentWithMissingFiled_23 -->
-        <test-method status="FAIL" signature="Create_POSTComment_20()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTComment_20" duration-ms="639" started-at="2022-05-02T12:54:01 IST" finished-at="2022-05-02T12:54:02 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-JSON path name doesn't match.
-Expected: is "kishore"
-  Actual: null
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-JSON path name doesn't match.
-Expected: is "kishore"
-  Actual: null
-
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:263)
-at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
-at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:110)
-at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-at gorest.TestCases.GorestAPITests.Create_POSTComment_20(GorestAPITests.java:437)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="Create_POSTComment_20()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTComment_20" duration-ms="552" started-at="2022-05-02T20:03:05 IST" finished-at="2022-05-02T20:03:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Create_POSTComment_20 -->
-        <test-method status="PASS" signature="Create_POSTCommentwithInavlidId_21()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTCommentwithInavlidId_21" duration-ms="623" started-at="2022-05-02T12:54:02 IST" finished-at="2022-05-02T12:54:03 IST">
+        <test-method status="PASS" signature="Create_POSTCommentwithInavlidId_21()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTCommentwithInavlidId_21" duration-ms="525" started-at="2022-05-02T20:03:06 IST" finished-at="2022-05-02T20:03:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Create_POSTCommentwithInavlidId_21 -->
-        <test-method status="PASS" signature="Create_POSTCommentwithoutBearerToken_22()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTCommentwithoutBearerToken_22" duration-ms="639" started-at="2022-05-02T12:54:03 IST" finished-at="2022-05-02T12:54:03 IST">
+        <test-method status="PASS" signature="Create_POSTCommentwithoutBearerToken_22()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTCommentwithoutBearerToken_22" duration-ms="561" started-at="2022-05-02T20:03:06 IST" finished-at="2022-05-02T20:03:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Create_POSTCommentwithoutBearerToken_22 -->
-        <test-method status="PASS" signature="DELETE_UserDetailsWithoutBearertoken_15()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="DELETE_UserDetailsWithoutBearertoken_15" duration-ms="480" started-at="2022-05-02T12:54:03 IST" finished-at="2022-05-02T12:54:04 IST">
+        <test-method status="PASS" signature="DELETE_UserDetailsWithoutBearertoken_15()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="DELETE_UserDetailsWithoutBearertoken_15" duration-ms="606" started-at="2022-05-02T20:03:07 IST" finished-at="2022-05-02T20:03:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DELETE_UserDetailsWithoutBearertoken_15 -->
-        <test-method status="PASS" signature="DELETE_UserDetails_14()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="DELETE_UserDetails_14" duration-ms="480" started-at="2022-05-02T12:54:04 IST" finished-at="2022-05-02T12:54:04 IST">
+        <test-method status="PASS" signature="DELETE_UserDetails_14()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="DELETE_UserDetails_14" duration-ms="540" started-at="2022-05-02T20:03:07 IST" finished-at="2022-05-02T20:03:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DELETE_UserDetails_14 -->
-        <test-method status="FAIL" signature="GET_USerDetailsById_05()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="GET_USerDetailsById_05" duration-ms="533" started-at="2022-05-02T12:54:04 IST" finished-at="2022-05-02T12:54:05 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-JSON path name doesn't match.
-Expected: is "Rohanji"
-  Actual: null
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-JSON path name doesn't match.
-Expected: is "Rohanji"
-  Actual: null
-
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:263)
-at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:110)
-at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-at gorest.TestCases.GorestAPITests.GET_USerDetailsById_05(GorestAPITests.java:134)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="GET_USerDetailsById_05()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="GET_USerDetailsById_05" duration-ms="517" started-at="2022-05-02T20:03:08 IST" finished-at="2022-05-02T20:03:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GET_USerDetailsById_05 -->
-        <test-method status="FAIL" signature="GET_UserDetailsWithoutBearerToken_07()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="GET_UserDetailsWithoutBearerToken_07" duration-ms="529" started-at="2022-05-02T12:54:05 IST" finished-at="2022-05-02T12:54:05 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-JSON path name doesn't match.
-Expected: is "Rohanji"
-  Actual: null
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-JSON path name doesn't match.
-Expected: is "Rohanji"
-  Actual: null
-
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:263)
-at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:110)
-at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-at gorest.TestCases.GorestAPITests.GET_UserDetailsWithoutBearerToken_07(GorestAPITests.java:163)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="GET_UserDetailsWithoutBearerToken_07()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="GET_UserDetailsWithoutBearerToken_07" duration-ms="598" started-at="2022-05-02T20:03:08 IST" finished-at="2022-05-02T20:03:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GET_UserDetailsWithoutBearerToken_07 -->
-        <test-method status="PASS" signature="GET_UsrDeatailByInvalidId_06()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="GET_UsrDeatailByInvalidId_06" duration-ms="532" started-at="2022-05-02T12:54:05 IST" finished-at="2022-05-02T12:54:06 IST">
+        <test-method status="PASS" signature="GET_UsrDeatailByInvalidId_06()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="GET_UsrDeatailByInvalidId_06" duration-ms="603" started-at="2022-05-02T20:03:09 IST" finished-at="2022-05-02T20:03:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GET_UsrDeatailByInvalidId_06 -->
-        <test-method status="FAIL" signature="PATCH_UpadateUserDeatils_11()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PATCH_UpadateUserDeatils_11" duration-ms="467" started-at="2022-05-02T12:54:06 IST" finished-at="2022-05-02T12:54:06 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-JSON path name doesn't match.
-Expected: is "Rohithsachinji1 "
-  Actual: null
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-JSON path name doesn't match.
-Expected: is "Rohithsachinji1 "
-  Actual: null
-
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at sun.reflect.GeneratedMethodAccessor108.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:263)
-at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:110)
-at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-at gorest.TestCases.GorestAPITests.PATCH_UpadateUserDeatils_11(GorestAPITests.java:257)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="PATCH_UpadateUserDeatils_11()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PATCH_UpadateUserDeatils_11" duration-ms="471" started-at="2022-05-02T20:03:10 IST" finished-at="2022-05-02T20:03:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PATCH_UpadateUserDeatils_11 -->
-        <test-method status="PASS" signature="PATCH_UpdateUserDetailsWithInvalidId_12()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PATCH_UpdateUserDetailsWithInvalidId_12" duration-ms="602" started-at="2022-05-02T12:54:06 IST" finished-at="2022-05-02T12:54:07 IST">
+        <test-method status="PASS" signature="PATCH_UpdateUserDetailsWithInvalidId_12()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PATCH_UpdateUserDetailsWithInvalidId_12" duration-ms="630" started-at="2022-05-02T20:03:10 IST" finished-at="2022-05-02T20:03:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PATCH_UpdateUserDetailsWithInvalidId_12 -->
-        <test-method status="PASS" signature="PATCH_UpdateUserDetailsWithoutBearerToken_13()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PATCH_UpdateUserDetailsWithoutBearerToken_13" duration-ms="758" started-at="2022-05-02T12:54:07 IST" finished-at="2022-05-02T12:54:08 IST">
+        <test-method status="PASS" signature="PATCH_UpdateUserDetailsWithoutBearerToken_13()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PATCH_UpdateUserDetailsWithoutBearerToken_13" duration-ms="531" started-at="2022-05-02T20:03:11 IST" finished-at="2022-05-02T20:03:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PATCH_UpdateUserDetailsWithoutBearerToken_13 -->
-        <test-method status="PASS" signature="POST_CreateNewUser_01()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_CreateNewUser_01" duration-ms="535" started-at="2022-05-02T12:54:08 IST" finished-at="2022-05-02T12:54:08 IST">
+        <test-method status="PASS" signature="POST_CreateNewUser_01()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_CreateNewUser_01" duration-ms="519" started-at="2022-05-02T20:03:11 IST" finished-at="2022-05-02T20:03:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- POST_CreateNewUser_01 -->
-        <test-method status="PASS" signature="POST_SameEmail_02()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_SameEmail_02" duration-ms="554" started-at="2022-05-02T12:54:08 IST" finished-at="2022-05-02T12:54:09 IST">
+        <test-method status="PASS" signature="POST_SameEmail_02()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_SameEmail_02" duration-ms="523" started-at="2022-05-02T20:03:12 IST" finished-at="2022-05-02T20:03:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- POST_SameEmail_02 -->
-        <test-method status="PASS" signature="POST_WIthWrongAuthenticationToken_04()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_WIthWrongAuthenticationToken_04" duration-ms="507" started-at="2022-05-02T12:54:09 IST" finished-at="2022-05-02T12:54:09 IST">
+        <test-method status="PASS" signature="POST_WIthWrongAuthenticationToken_04()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_WIthWrongAuthenticationToken_04" duration-ms="507" started-at="2022-05-02T20:03:12 IST" finished-at="2022-05-02T20:03:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- POST_WIthWrongAuthenticationToken_04 -->
-        <test-method status="PASS" signature="POST_WithMissingField_03()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_WithMissingField_03" duration-ms="497" started-at="2022-05-02T12:54:09 IST" finished-at="2022-05-02T12:54:10 IST">
+        <test-method status="PASS" signature="POST_WithMissingField_03()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_WithMissingField_03" duration-ms="631" started-at="2022-05-02T20:03:13 IST" finished-at="2022-05-02T20:03:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- POST_WithMissingField_03 -->
-        <test-method status="FAIL" signature="PUT_UpadateUserDeatils_08()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PUT_UpadateUserDeatils_08" duration-ms="616" started-at="2022-05-02T12:54:10 IST" finished-at="2022-05-02T12:54:11 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-JSON path name doesn't match.
-Expected: is "Rohithji"
-  Actual: null
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-JSON path name doesn't match.
-Expected: is "Rohithji"
-  Actual: null
-
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at sun.reflect.GeneratedMethodAccessor108.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:263)
-at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
-at io.restassured.specification.ResponseSpecification$body$0.callCurrent(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:110)
-at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-at gorest.TestCases.GorestAPITests.PUT_UpadateUserDeatils_08(GorestAPITests.java:189)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="PUT_UpadateUserDeatils_08()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PUT_UpadateUserDeatils_08" duration-ms="485" started-at="2022-05-02T20:03:14 IST" finished-at="2022-05-02T20:03:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PUT_UpadateUserDeatils_08 -->
-        <test-method status="PASS" signature="PUT_UpdateUserDetailsWithInvalidId_09()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PUT_UpdateUserDetailsWithInvalidId_09" duration-ms="516" started-at="2022-05-02T12:54:11 IST" finished-at="2022-05-02T12:54:11 IST">
+        <test-method status="PASS" signature="PUT_UpdateUserDetailsWithInvalidId_09()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PUT_UpdateUserDetailsWithInvalidId_09" duration-ms="548" started-at="2022-05-02T20:03:14 IST" finished-at="2022-05-02T20:03:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PUT_UpdateUserDetailsWithInvalidId_09 -->
-        <test-method status="PASS" signature="PUT_UpdateUserDetailsWithoutBearerToken_10()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PUT_UpdateUserDetailsWithoutBearerToken_10" duration-ms="615" started-at="2022-05-02T12:54:11 IST" finished-at="2022-05-02T12:54:12 IST">
+        <test-method status="PASS" signature="PUT_UpdateUserDetailsWithoutBearerToken_10()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PUT_UpdateUserDetailsWithoutBearerToken_10" duration-ms="555" started-at="2022-05-02T20:03:15 IST" finished-at="2022-05-02T20:03:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PUT_UpdateUserDetailsWithoutBearerToken_10 -->

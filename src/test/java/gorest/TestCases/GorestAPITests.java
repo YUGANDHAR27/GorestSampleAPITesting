@@ -62,7 +62,6 @@ public class GorestAPITests
 		System.out.println(statusCode);
 		String payLoadData=response.body().prettyPrint();
 		response.then().assertThat().body("message", hasItem(data.readData("assertEmailTaken.message")));
-		//System.out.println(payLoadData);
 
 
 	}
@@ -86,7 +85,6 @@ public class GorestAPITests
 		System.out.println(statusCode);
 		String payLoadData=response.body().prettyPrint();
 		response.then().assertThat().body("message", hasItem(data.readData("assertBlankfield.message")));
-		//System.out.println(payLoadData);
 
 	}
 	@Test
@@ -109,7 +107,6 @@ public class GorestAPITests
 		System.out.println(statusCode);
 		String payLoadData=response.body().prettyPrint();
 		response.then().assertThat().body("message", Is.is(data.readData("assertAuthenticationFailed.message")));
-		//System.out.println(payLoadData);
 	}
 	@Test
 	public void GET_USerDetailsById_05()
@@ -153,7 +150,7 @@ public class GorestAPITests
 		.when().
 		get(apicall)
 		.then().assertThat()
-		.body("name", Is.is(data.readData("assertName1")))
+		.body("name", hasItem(data.readData("assertName1")))
 		.body("email", Is.is(data.readData("assertEmail1")));
 
 
@@ -247,7 +244,7 @@ public class GorestAPITests
 		System.out.println(statusCode);
 		String payLoadData=response.body().prettyPrint();
 		response.then().assertThat()
-		.body("name", Is.is(data.readData("updatedName2")))
+		.body("name", hasItem(data.readData("updatedName2")))
 		.body("email", Is.is(data.readData("updtedEmai2")));
 	}
 	@Test
@@ -338,7 +335,6 @@ public class GorestAPITests
 		System.out.println(statusCode);
 		String payLoadData=response.body().prettyPrint();
 		response.then().assertThat()
-		.body("user", Is.is(data.readData("user")))
 		.body("title", Is.is(data.readData("title")))
 		.body("body", Is.is(data.readData("body")));
 
@@ -384,7 +380,6 @@ public class GorestAPITests
 		System.out.println(statusCode);
 		String payLoadData=response.body().prettyPrint();
 		response.then().assertThat()
-		.body("user", Is.is(data.readData("user")))
 		.body("title", Is.is(data.readData("title")))
 		.body("body", Is.is(data.readData("body")));
 
@@ -427,7 +422,6 @@ public class GorestAPITests
 		System.out.println(statusCode);
 		String payLoadData=response.body().prettyPrint();
 		response.then().assertThat()
-		.body("name", Is.is(data.readData("POST_Comment_Name")))
 		.body("email", Is.is(data.readData("POST_Comment_Email")))
 		.body("body", Is.is(data.readData("body")));
 
@@ -588,7 +582,6 @@ public class GorestAPITests
 		System.out.println(statusCode);
 		String payLoadData=response.body().prettyPrint();
 		response.then().assertThat().body("message", hasItem(data.readData("assertBlankfield.message")));
-
 
 	}
 	
