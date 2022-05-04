@@ -118,9 +118,9 @@ public class GorestAPITests
 		int statusCode=response.getStatusCode();	
 		System.out.println(statusCode);
 		String payLoadData=response.body().prettyPrint();
-//		response.then().assertThat()
-//		.body("name", Is.is(data.readData("assertName1")))
-//		.body("email", Is.is(data.readData("assertEmail1")));
+		response.then().assertThat()
+		.body("name", Is.is(data.readData("assertName1")))
+		.body("email", Is.is(data.readData("assertEmail1")));
 
 
 	}
@@ -146,10 +146,10 @@ public class GorestAPITests
 		String token=data.readData("authenticationToken");
 		RestAssured.given().auth().oauth2(token)
 		.when().
-		get(apicall);
-//		.then().assertThat()
-//		.body("name", Is.is(data.readData("assertName1")))
-//		.body("email", Is.is(data.readData("assertEmail1")));
+		get(apicall)
+		.then().assertThat()
+		.body("name", Is.is(data.readData("assertName1")))
+		.body("email", Is.is(data.readData("assertEmail1")));
 
 
 	}
@@ -173,9 +173,9 @@ public class GorestAPITests
 
 		System.out.println(statusCode);
 		String payLoadData=response.body().prettyPrint();
-//		response.then().assertThat()
-//		.body("name", Is.is(data.readData("updatedName")))
-//		.body("email", Is.is(data.readData("updtaedEmail")));
+		response.then().assertThat()
+		.body("name", Is.is(data.readData("updatedName")))
+		.body("email", Is.is(data.readData("updtaedEmail")));
 	}
 	@Test
 	public void PUT_UpdateUserDetailsWithInvalidId_09()
@@ -241,9 +241,9 @@ public class GorestAPITests
 
 		System.out.println(statusCode);
 		String payLoadData=response.body().prettyPrint();
-//		response.then().assertThat()
-//		.body("name", Is.is(data.readData("updatedName2")))
-//		.body("email", Is.is(data.readData("updtedEmai2")));
+		response.then().assertThat()
+		.body("name", Is.is(data.readData("updatedName2")))
+		.body("email", Is.is(data.readData("updtedEmai2")));
 	}
 	@Test
 	public void PATCH_UpdateUserDetailsWithInvalidId_12()
@@ -377,9 +377,9 @@ public class GorestAPITests
 		int statusCode=response.getStatusCode();
 		System.out.println(statusCode);
 		String payLoadData=response.body().prettyPrint();
-//		response.then().assertThat()
-//		.body("title", Is.is(data.readData("title")))
-//		.body("body", Is.is(data.readData("body")));
+		response.then().assertThat()
+		.body("title", Is.is(data.readData("title")))
+		.body("body", Is.is(data.readData("body")));
 
 	}
 	@Test
@@ -419,9 +419,9 @@ public class GorestAPITests
 		int statusCode=response.getStatusCode();
 		System.out.println(statusCode);
 		String payLoadData=response.body().prettyPrint();
-//		response.then().assertThat()
-//		.body("email", Is.is(data.readData("POST_Comment_Email")))
-//		.body("body", Is.is(data.readData("body")));
+		response.then().assertThat()
+		.body("email", Is.is(data.readData("POST_Comment_Email")))
+		.body("body", Is.is(data.readData("body")));
 
 	}
 	@Test
