@@ -5,14 +5,12 @@
     <classes>
       <class name="gorest.TestCases.GorestAPITests">
         <methods>
-          <include name="PATCH_UpadateUserDeatils"/>
-          <include name="GET_USerDetailsById"/>
-          <include name="POST_WithMissingField"/>
-          <include name="PUT_UpdateUserDetailsWithoutBearerToken"/>
-          <include name="POST_WIthWrongAuthenticationToken"/>
-          <include name="PATCH_UpdateUserDetailsWithoutBearerToken"/>
-          <include name="GET_UserDetailsWithoutBearerToken"/>
-          <include name="POST_SameEmail"/>
+          <include name="GET_USerDetailsById_05"/>
+          <include name="GET_UserDetailsWithoutBearerToken_07"/>
+          <include name="Create_POSTComment_20"/>
+          <include name="PATCH_UpadateUserDeatils_11"/>
+          <include name="PUT_UpadateUserDeatils_08"/>
+          <include name="CreateUserPost_WIthInvalidId_18"/>
         </methods>
       </class> <!-- gorest.TestCases.GorestAPITests -->
     </classes>

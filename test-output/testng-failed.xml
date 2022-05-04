@@ -5,7 +5,7 @@
     <classes>
       <class name="gorest.TestCases.GorestAPITests">
         <methods>
-          <include name="GET_USerDetailsById_05"/>
+          <include name="POST_CreateNewUser_01"/>
         </methods>
       </class> <!-- gorest.TestCases.GorestAPITests -->
     </classes>

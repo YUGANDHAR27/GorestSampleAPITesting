@@ -1,113 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="26" passed="26">
+<testng-results skipped="0" failed="0" ignored="0" total="27" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20717" started-at="2022-05-02T20:34:36 IST" finished-at="2022-05-02T20:34:57 IST">
+  <suite name="Default suite" duration-ms="20303" started-at="2022-05-04T07:55:39 IST" finished-at="2022-05-04T07:55:59 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20717" started-at="2022-05-02T20:34:36 IST" finished-at="2022-05-02T20:34:57 IST">
+    <test name="Default test" duration-ms="20303" started-at="2022-05-04T07:55:39 IST" finished-at="2022-05-04T07:55:59 IST">
       <class name="gorest.TestCases.GorestAPITests">
-        <test-method status="PASS" signature="CreateUserPost_16()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_16" duration-ms="4818" started-at="2022-05-02T20:34:36 IST" finished-at="2022-05-02T20:34:41 IST">
+        <test-method status="PASS" signature="CreateUserPost_16()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_16" duration-ms="4897" started-at="2022-05-04T07:55:39 IST" finished-at="2022-05-04T07:55:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUserPost_16 -->
-        <test-method status="PASS" signature="CreateUserPost_WIthInvalidId_18()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_WIthInvalidId_18" duration-ms="520" started-at="2022-05-02T20:34:41 IST" finished-at="2022-05-02T20:34:42 IST">
+        <test-method status="PASS" signature="CreateUserPost_WIthInvalidId_18()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_WIthInvalidId_18" duration-ms="747" started-at="2022-05-04T07:55:43 IST" finished-at="2022-05-04T07:55:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUserPost_WIthInvalidId_18 -->
-        <test-method status="PASS" signature="CreateUserPost_withMissingFields_19()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_withMissingFields_19" duration-ms="798" started-at="2022-05-02T20:34:42 IST" finished-at="2022-05-02T20:34:42 IST">
+        <test-method status="PASS" signature="CreateUserPost_withMissingFields_19()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_withMissingFields_19" duration-ms="754" started-at="2022-05-04T07:55:44 IST" finished-at="2022-05-04T07:55:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUserPost_withMissingFields_19 -->
-        <test-method status="PASS" signature="CreateUserPost_withoutBearerToken_17()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_withoutBearerToken_17" duration-ms="606" started-at="2022-05-02T20:34:42 IST" finished-at="2022-05-02T20:34:43 IST">
+        <test-method status="PASS" signature="CreateUserPost_withoutBearerToken_17()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUserPost_withoutBearerToken_17" duration-ms="565" started-at="2022-05-04T07:55:45 IST" finished-at="2022-05-04T07:55:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUserPost_withoutBearerToken_17 -->
-        <test-method status="PASS" signature="CreateUser_todo_POSTWithInavalidId_25()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POSTWithInavalidId_25" duration-ms="769" started-at="2022-05-02T20:34:43 IST" finished-at="2022-05-02T20:34:44 IST">
+        <test-method status="PASS" signature="CreateUser_todo_POSTWithInavalidId_25()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POSTWithInavalidId_25" duration-ms="643" started-at="2022-05-04T07:55:46 IST" finished-at="2022-05-04T07:55:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUser_todo_POSTWithInavalidId_25 -->
-        <test-method status="PASS" signature="CreateUser_todo_POSTWithoutBearerToken_26()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POSTWithoutBearerToken_26" duration-ms="535" started-at="2022-05-02T20:34:44 IST" finished-at="2022-05-02T20:34:44 IST">
+        <test-method status="PASS" signature="CreateUser_todo_POSTWithMissingField_27()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POSTWithMissingField_27" duration-ms="615" started-at="2022-05-04T07:55:46 IST" finished-at="2022-05-04T07:55:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser_todo_POSTWithMissingField_27 -->
+        <test-method status="PASS" signature="CreateUser_todo_POSTWithoutBearerToken_26()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POSTWithoutBearerToken_26" duration-ms="549" started-at="2022-05-04T07:55:47 IST" finished-at="2022-05-04T07:55:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUser_todo_POSTWithoutBearerToken_26 -->
-        <test-method status="PASS" signature="CreateUser_todo_POST_24()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POST_24" duration-ms="647" started-at="2022-05-02T20:34:44 IST" finished-at="2022-05-02T20:34:45 IST">
+        <test-method status="PASS" signature="CreateUser_todo_POST_24()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="CreateUser_todo_POST_24" duration-ms="624" started-at="2022-05-04T07:55:47 IST" finished-at="2022-05-04T07:55:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateUser_todo_POST_24 -->
-        <test-method status="PASS" signature="Create_POSTCommentWithMissingFiled_23()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTCommentWithMissingFiled_23" duration-ms="612" started-at="2022-05-02T20:34:45 IST" finished-at="2022-05-02T20:34:46 IST">
+        <test-method status="PASS" signature="Create_POSTCommentWithMissingFiled_23()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTCommentWithMissingFiled_23" duration-ms="530" started-at="2022-05-04T07:55:48 IST" finished-at="2022-05-04T07:55:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Create_POSTCommentWithMissingFiled_23 -->
-        <test-method status="PASS" signature="Create_POSTComment_20()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTComment_20" duration-ms="651" started-at="2022-05-02T20:34:46 IST" finished-at="2022-05-02T20:34:46 IST">
+        <test-method status="PASS" signature="Create_POSTComment_20()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTComment_20" duration-ms="621" started-at="2022-05-04T07:55:49 IST" finished-at="2022-05-04T07:55:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Create_POSTComment_20 -->
-        <test-method status="PASS" signature="Create_POSTCommentwithInavlidId_21()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTCommentwithInavlidId_21" duration-ms="622" started-at="2022-05-02T20:34:46 IST" finished-at="2022-05-02T20:34:47 IST">
+        <test-method status="PASS" signature="Create_POSTCommentwithInavlidId_21()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTCommentwithInavlidId_21" duration-ms="636" started-at="2022-05-04T07:55:49 IST" finished-at="2022-05-04T07:55:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Create_POSTCommentwithInavlidId_21 -->
-        <test-method status="PASS" signature="Create_POSTCommentwithoutBearerToken_22()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTCommentwithoutBearerToken_22" duration-ms="640" started-at="2022-05-02T20:34:47 IST" finished-at="2022-05-02T20:34:48 IST">
+        <test-method status="PASS" signature="Create_POSTCommentwithoutBearerToken_22()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="Create_POSTCommentwithoutBearerToken_22" duration-ms="568" started-at="2022-05-04T07:55:50 IST" finished-at="2022-05-04T07:55:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Create_POSTCommentwithoutBearerToken_22 -->
-        <test-method status="PASS" signature="DELETE_UserDetailsWithoutBearertoken_15()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="DELETE_UserDetailsWithoutBearertoken_15" duration-ms="640" started-at="2022-05-02T20:34:48 IST" finished-at="2022-05-02T20:34:48 IST">
+        <test-method status="PASS" signature="DELETE_UserDetailsWithoutBearertoken_15()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="DELETE_UserDetailsWithoutBearertoken_15" duration-ms="471" started-at="2022-05-04T07:55:50 IST" finished-at="2022-05-04T07:55:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DELETE_UserDetailsWithoutBearertoken_15 -->
-        <test-method status="PASS" signature="DELETE_UserDetails_14()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="DELETE_UserDetails_14" duration-ms="609" started-at="2022-05-02T20:34:48 IST" finished-at="2022-05-02T20:34:49 IST">
+        <test-method status="PASS" signature="DELETE_UserDetails_14()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="DELETE_UserDetails_14" duration-ms="535" started-at="2022-05-04T07:55:51 IST" finished-at="2022-05-04T07:55:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DELETE_UserDetails_14 -->
-        <test-method status="PASS" signature="GET_USerDetailsById_05()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="GET_USerDetailsById_05" duration-ms="715" started-at="2022-05-02T20:34:49 IST" finished-at="2022-05-02T20:34:49 IST">
+        <test-method status="PASS" signature="GET_USerDetailsById_05()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="GET_USerDetailsById_05" duration-ms="523" started-at="2022-05-04T07:55:51 IST" finished-at="2022-05-04T07:55:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GET_USerDetailsById_05 -->
-        <test-method status="PASS" signature="GET_UserDetailsWithoutBearerToken_07()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="GET_UserDetailsWithoutBearerToken_07" duration-ms="609" started-at="2022-05-02T20:34:49 IST" finished-at="2022-05-02T20:34:50 IST">
+        <test-method status="PASS" signature="GET_UserDetailsWithoutBearerToken_07()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="GET_UserDetailsWithoutBearerToken_07" duration-ms="640" started-at="2022-05-04T07:55:52 IST" finished-at="2022-05-04T07:55:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GET_UserDetailsWithoutBearerToken_07 -->
-        <test-method status="PASS" signature="GET_UsrDeatailByInvalidId_06()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="GET_UsrDeatailByInvalidId_06" duration-ms="648" started-at="2022-05-02T20:34:50 IST" finished-at="2022-05-02T20:34:51 IST">
+        <test-method status="PASS" signature="GET_UsrDeatailByInvalidId_06()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="GET_UsrDeatailByInvalidId_06" duration-ms="631" started-at="2022-05-04T07:55:53 IST" finished-at="2022-05-04T07:55:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GET_UsrDeatailByInvalidId_06 -->
-        <test-method status="PASS" signature="PATCH_UpadateUserDeatils_11()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PATCH_UpadateUserDeatils_11" duration-ms="579" started-at="2022-05-02T20:34:51 IST" finished-at="2022-05-02T20:34:51 IST">
+        <test-method status="PASS" signature="PATCH_UpadateUserDeatils_11()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PATCH_UpadateUserDeatils_11" duration-ms="589" started-at="2022-05-04T07:55:53 IST" finished-at="2022-05-04T07:55:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PATCH_UpadateUserDeatils_11 -->
-        <test-method status="PASS" signature="PATCH_UpdateUserDetailsWithInvalidId_12()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PATCH_UpdateUserDetailsWithInvalidId_12" duration-ms="600" started-at="2022-05-02T20:34:51 IST" finished-at="2022-05-02T20:34:52 IST">
+        <test-method status="PASS" signature="PATCH_UpdateUserDetailsWithInvalidId_12()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PATCH_UpdateUserDetailsWithInvalidId_12" duration-ms="544" started-at="2022-05-04T07:55:54 IST" finished-at="2022-05-04T07:55:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PATCH_UpdateUserDetailsWithInvalidId_12 -->
-        <test-method status="PASS" signature="PATCH_UpdateUserDetailsWithoutBearerToken_13()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PATCH_UpdateUserDetailsWithoutBearerToken_13" duration-ms="564" started-at="2022-05-02T20:34:52 IST" finished-at="2022-05-02T20:34:52 IST">
+        <test-method status="PASS" signature="PATCH_UpdateUserDetailsWithoutBearerToken_13()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PATCH_UpdateUserDetailsWithoutBearerToken_13" duration-ms="526" started-at="2022-05-04T07:55:54 IST" finished-at="2022-05-04T07:55:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PATCH_UpdateUserDetailsWithoutBearerToken_13 -->
-        <test-method status="PASS" signature="POST_CreateNewUser_01()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_CreateNewUser_01" duration-ms="671" started-at="2022-05-02T20:34:52 IST" finished-at="2022-05-02T20:34:53 IST">
+        <test-method status="PASS" signature="POST_CreateNewUser_01()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_CreateNewUser_01" duration-ms="572" started-at="2022-05-04T07:55:55 IST" finished-at="2022-05-04T07:55:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- POST_CreateNewUser_01 -->
-        <test-method status="PASS" signature="POST_SameEmail_02()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_SameEmail_02" duration-ms="707" started-at="2022-05-02T20:34:53 IST" finished-at="2022-05-02T20:34:54 IST">
+        <test-method status="PASS" signature="POST_SameEmail_02()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_SameEmail_02" duration-ms="591" started-at="2022-05-04T07:55:55 IST" finished-at="2022-05-04T07:55:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- POST_SameEmail_02 -->
-        <test-method status="PASS" signature="POST_WIthWrongAuthenticationToken_04()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_WIthWrongAuthenticationToken_04" duration-ms="547" started-at="2022-05-02T20:34:54 IST" finished-at="2022-05-02T20:34:54 IST">
+        <test-method status="PASS" signature="POST_WIthWrongAuthenticationToken_04()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_WIthWrongAuthenticationToken_04" duration-ms="482" started-at="2022-05-04T07:55:56 IST" finished-at="2022-05-04T07:55:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- POST_WIthWrongAuthenticationToken_04 -->
-        <test-method status="PASS" signature="POST_WithMissingField_03()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_WithMissingField_03" duration-ms="616" started-at="2022-05-02T20:34:54 IST" finished-at="2022-05-02T20:34:55 IST">
+        <test-method status="PASS" signature="POST_WithMissingField_03()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="POST_WithMissingField_03" duration-ms="571" started-at="2022-05-04T07:55:56 IST" finished-at="2022-05-04T07:55:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- POST_WithMissingField_03 -->
-        <test-method status="PASS" signature="PUT_UpadateUserDeatils_08()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PUT_UpadateUserDeatils_08" duration-ms="680" started-at="2022-05-02T20:34:55 IST" finished-at="2022-05-02T20:34:56 IST">
+        <test-method status="PASS" signature="PUT_UpadateUserDeatils_08()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PUT_UpadateUserDeatils_08" duration-ms="590" started-at="2022-05-04T07:55:57 IST" finished-at="2022-05-04T07:55:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PUT_UpadateUserDeatils_08 -->
-        <test-method status="PASS" signature="PUT_UpdateUserDetailsWithInvalidId_09()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PUT_UpdateUserDetailsWithInvalidId_09" duration-ms="645" started-at="2022-05-02T20:34:56 IST" finished-at="2022-05-02T20:34:56 IST">
+        <test-method status="PASS" signature="PUT_UpdateUserDetailsWithInvalidId_09()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PUT_UpdateUserDetailsWithInvalidId_09" duration-ms="652" started-at="2022-05-04T07:55:58 IST" finished-at="2022-05-04T07:55:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PUT_UpdateUserDetailsWithInvalidId_09 -->
-        <test-method status="PASS" signature="PUT_UpdateUserDetailsWithoutBearerToken_10()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PUT_UpdateUserDetailsWithoutBearerToken_10" duration-ms="556" started-at="2022-05-02T20:34:56 IST" finished-at="2022-05-02T20:34:57 IST">
+        <test-method status="PASS" signature="PUT_UpdateUserDetailsWithoutBearerToken_10()[pri:0, instance:gorest.TestCases.GorestAPITests@12cdcf4]" name="PUT_UpdateUserDetailsWithoutBearerToken_10" duration-ms="512" started-at="2022-05-04T07:55:58 IST" finished-at="2022-05-04T07:55:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PUT_UpdateUserDetailsWithoutBearerToken_10 -->
